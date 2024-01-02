@@ -1,0 +1,63 @@
+:root {
+    --spacing: 1em;
+
+    color-scheme: light dark;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: san-serif;
+}
+
+main {
+    padding: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    max-width: 20rem;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+}
+
+.form__error {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    border: 1px solid red;
+    background-color: #fdd;
+    padding: var(--spacing);
+    border-radius: 4px;
+    color: red;
+}
+
+input,
+button[type="submit"] {
+    padding: var(--spacing);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+}
